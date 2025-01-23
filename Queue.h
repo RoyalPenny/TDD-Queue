@@ -10,4 +10,5 @@ typedef struct {
 
 void initializeQueue(Queue* q);
 void enqueue(Queue* q, int i);
+void dequeue(Queue* q);
 int peek(Queue* q);
