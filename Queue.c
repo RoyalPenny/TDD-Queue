@@ -15,8 +15,9 @@ void enqueue(Queue* q, int i){
 };
 
 //Removes a number from the queue
-void dequeue(Queue* q){};
-
+void dequeue(Queue* q){;
+    q->front--;
+}
 
 //View the front of the queue
 int peek(Queue* q)
