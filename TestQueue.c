@@ -6,8 +6,11 @@ void tearDown(void){}
 
 void test_Enqueue(void)
 {
-    enqueue(1);
-    TEST_ASSERT_EQUAL(1, peek());
+    //Creates a queue and adds the number 1 to the queue
+    Queue q; 
+    initializeQueue(&q);
+    enqueue(&q, 1);
+    TEST_ASSERT_EQUAL(1, peek(&q));
 }
 
 int main(void)

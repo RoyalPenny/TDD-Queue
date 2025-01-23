@@ -1,3 +1,13 @@
 #include <stdint.h>
-void enqueue(int i);
-int peek();
+#define MAX_SIZE 256
+
+//Setup queue structure
+typedef struct {
+    int queue[MAX_SIZE];
+    int front;
+    int back;
+} Queue;
+
+void initializeQueue(Queue* q);
+void enqueue(Queue* q, int i);
+int peek(Queue* q);
