@@ -9,12 +9,8 @@ void initializeQueue(Queue* q)
 
 //Add a number to the queue
 void enqueue(Queue* q, int i){
-    
-    //Unoptimised code
-    int j;
-    j = i;
 
-    q->queue[q->front] = j;
+    q->queue[q->front] = i;
     q->front++;
 };
 
